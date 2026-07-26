@@ -1,91 +1,121 @@
 *{
-    background-color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 
 }
-body{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+html,body,main{
+    /* height: 100vh;
+    width: 100vw; */
+    /* overflow: hidden; */
+    background-color: white;
+    /* border: 4px solid black; */
+    
 }
 .container{
     white-space: nowrap;
     box-sizing: border-box;
-    display: inline-block;
-    width: 100vw;
-    height: 15vh;
+    /* display: inline; */
+    height: calc(100vh - 85vh - 4vh);
+    width: calc(100vw - 2vw);
     font-size: xx-large;
-    padding: 2vh 3vw;
+    padding: 2vh 2vw;
+    
     
 }
 .logo{
     display: inline;
     width: 10vw;
-    /* vertical-align:middle; */
-    /* align-items: start; */
-    /* height:100vh; */
+    /* height: 15vh; */
+    /* width: auto; */
     float: left;
+    
 }
 .logo img{
-    width: 100%;
+    width: 50%;
+    height: auto;
+    
 
 }
 .nav{
-    
     display: inline;
-    background-color: white;
-    
-    /* width: 70%; */
-    /* position: absolute;; */
-    /* padding: 1vh 2vw; */
-    position: sticky;
-    /* align-items: center; */
+
+    line-height: 15vh;
+    /* position: sticky; */
     text-align:center;
     vertical-align:middle;
-    word-spacing: 5px;
-    
+    word-spacing: 25px;
     
 }
 .nav a{
+    display: inline;
     text-decoration: none;
     border-radius: 10px;
+    padding: 2vh 3vw;
+
 }
 .uname{
     display: inline;
-    float: right;
+    float:right;
+    margin-top:4vh;
 }
 .uname a{
-    display: inline-block;
+    display: inline;
     background-color: rgb(51, 142, 212);
-    border-radius: 10px;
+    border-radius: 20px;
     text-decoration:none;
     vertical-align: middle;
+    padding: 1.6vh 2vw;
+    color: white;
+    font-size: larger;
+    
 }
 .content{
+    position: relative;
+    padding:2vw;
+    /* margin-top: calc(100vh - 85vh); */
     box-sizing: border-box;
-    display: inline-block;
-    height: 85vh;
+    /* display: block; */
+    height: calc(100vh - 15vh - 4vh);
+    width: calc(100vw - 4vw);
 }
 .left{
-    /* padding: 10%; */
-    vertical-align: middle;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 0 3vw;
+    /* vertical-align: middle; */
     text-align: center;
-    float:left;
+    /* float:left; */
     width: 50vw;
     
 }
 .right{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    box-sizing: border-box;
     vertical-align: middle;
     text-align: center;
+    width: 50%;
+    height: auto;
+    padding: 2vh 2vw;
+}
+.right img{
+    /* vertical-align: middle;
+    text-align: center;
     width: 50vw;
-    float: right;
+    float: right; */
+    max-width: 90%;
+    max-height: calc(100vh - 15vh - 4vw);
+    width: auto;
+    height: auto;
 }
 #book-button{
     padding: 1vh;
-    display: inline-block;
+    display: inline;
     border-radius: 10px;
     min-width: 165px;
     
@@ -96,11 +126,9 @@ body{
     text-align: center;
     font-size: large;
     font-family:cursive;
-       
-}
-#book-button {
     text-decoration:none;
 }
+
 #book-button:hover ,.nav a:hover{
     transition: 2s;
     box-shadow:10px 10px 5px black ;
