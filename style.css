@@ -10,9 +10,12 @@ html{
     padding: 2vw;
     overflow: hidden;
 }
+body{
+    height: 100%;
+}
 
 header{
-    width: 100vw;
+    width: 96vw;
     height: 12vh;
     padding: 2vh 5vw;
 }
@@ -28,7 +31,7 @@ header{
 
 .logo{
     display: inline;
-    float: inline;
+    float:left;
     width: 20%;
     /* font-size: 2vw; */
 }
@@ -37,6 +40,7 @@ header{
     width: 55%;
     text-align: center;
     margin-left: 15vw; 
+    vertical-align: middle;
 
     /* font-size: 1em; */
     /* padding: 2vw; */
@@ -72,7 +76,7 @@ header{
 
 main{
     width: 100vw;
-    height: 84vh;
+    height: 88vh;
     padding: 5vw 5vh;
 }
 .content{
